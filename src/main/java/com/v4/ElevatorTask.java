@@ -2,12 +2,12 @@ package com.v4;
 
 import com.v3.Elevator;
 
-public class Elevatortask implements Runnable {
-    private Elevator elevator;
-    private int desFloor;
-    private int passengerNum;
+public class ElevatorTask implements Runnable {
+    private final Elevator elevator;
+    private final int desFloor;
+    private final int passengerNum;
 
-    public Elevatortask(Elevator elevator,int desFloor,int passengerNum ){
+    public ElevatorTask(Elevator elevator,int desFloor,int passengerNum ){
         this.elevator = elevator;
         this.desFloor = desFloor;
         this.passengerNum = passengerNum;
